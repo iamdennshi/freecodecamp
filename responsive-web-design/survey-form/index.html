@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Заголовок формы</h1>
+        <p id="description">Некоторое описание формы, расскрывающее общее представление для ее прохождения</p>    
+    </header>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Имя</label>
+        <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+        <label for="email" id="email-label">Почта</label>
+        <input type="email" id="email" placeholder="Введите вашу почту" required>
+        <label for="number" id="number-label">Возвраст <span class="italic">(не обязательно)</span></label>
+        <input put type="number" id="number" placeholder="Введите ваш возвраст" min="10" max="99">
+
+        <label for="dropdown">Чем вы занимаетесь?</label>
+        <select name="dropdown" id="dropdown">
+            <option value="" disabled selected>Выберете чем вы занимаетесь</option>
+            <option value="0">Студент</option>
+            <option value="1">Работаю</option>
+            <option value="2">Подрабатываю</option>
+            <option value="3">Не скажу</option>
+            <option value="4">Другое</option>
+        </select>
+
+        <section class="recommend">
+            <label for="recomend">Вы бы порекомендовали нас вашим друзьям?</label>
+            <p>
+                <input type="radio" value="0" name="recommend" id="recommend-1" checked>
+                <label for="recommend-1">Определенно</label>
+            </p>
+            <p>
+                <input type="radio" value="1" name="recommend" id="recommend-2">
+                <label for="recommend-2">Может быть</label>                
+            </p>
+            <p>
+                <input type="radio" value="2" name="recommend" id="recommend-3">
+                <label for="recommend-3">Конечно  нет</label>  
+            </p>
+        </section>
+               
+        <section class="feature">
+            <label for="improve">Какое качество вы бы хотели улучшить в себе? <span class="italic">(можно несколько)</span></label>
+            <p>
+                <input type="checkbox" id="feature-1" value="0" name="feature-1">
+                <label for="feature-1">Целеустремленность</label>
+            </p>
+            <p>
+                <input type="checkbox" id="feature-2" value="1" name="feature-2">
+                <label for="feature-2">Терпеливость</label>
+            </p>
+            <p>
+                <input type="checkbox" id="feature-3" value="2" name="feature-3">
+                <label for="feature-3">Дружелюбие</label>
+            </p>
+            <p>
+                <input type="checkbox" id="feature-4" value="3" name="feature-4">
+                <label for="feature-4">Уверенность</label>
+            </p>
+        </section>
+
+        <section class="suggestions">
+            <label for="comment">Ваши комментарий или предложение</label>
+            <textarea placeholder="Введите ваш комментарий..." name="comment" id="comment" cols="60" rows="10"></textarea>
+        </section>
+
+        <button type="submit" id="submit">ОТПРАВИТЬ</button>
+    </form>
+    <footer>
+        <a target="_blank" href="https://github.com/iamdennshi">dennshi © 2022</a>
+    </footer>
+</body>
+</html>
