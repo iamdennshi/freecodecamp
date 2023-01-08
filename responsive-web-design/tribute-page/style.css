@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+#title {
+  padding-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: large;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+#img-caption {
+  font-size: medium;
+  font-weight: 300;
+  padding: 20px 5px;
+}
+
+#achievements {
+  font-weight: 500;
+  font-size: large;
+  margin: 30px 0;
+}
+
+
+#tribute-link {
+  margin-top: 30px;
+}
+
+#main {
+  margin: 30px 10px;
+  padding: 30px 0;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#image {
+    display: block;
+    /* object-fit: cover; */
+    /* object-position: 50% 10%; */
+    max-width: 90%;
+    max-height: 60vh;
+    margin: 0 auto;
+  }
+  
+#img-div {
+
+  background-color: white;
+  margin: 0 20px;
+  padding-top: 20px;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: 40px;
+  text-align: left;
+  font-weight: 300;
+}
+button {
+  height: 10%;
+  /* width: 10%; */
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 1em;
+}
+
+button .arrow {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transition: transform 0.3s ease-out;
+  outline: none;
+}
+
+#right-btn .arrow {
+  transform: rotate(-45deg);
+}
+
+#left-btn .arrow {
+  transform: rotate(135deg);
+}
+
