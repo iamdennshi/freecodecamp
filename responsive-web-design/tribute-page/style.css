@@ -2,10 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 :root {
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(18 24 27);
+  text-align: center;
+  margin: 30px 0;
 }
 
 #title {
@@ -14,57 +21,71 @@
   text-transform: uppercase;
 }
 
-h2 {
+#sub-title {
   font-size: large;
   font-weight: 300;
   padding-bottom: 20px;
+  color: rgb(108 121 131);
+}
+
+#img-div {
+  border-radius: 12px;
+  background-color: rgb(42 46 53);
+  margin: 0 20px;
+  padding-top: 20px;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tribute-image {
+  display: block;
+  max-width: 90%;
+  max-height: 60vh;
+  margin: 0 auto;
+}
+
+button {
+  width: 32px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  margin: auto;
+}
+
+#left-btn {
+  transform: rotate(-90deg);
+}
+
+#right-btn {
+  transform: rotate(90deg);
+}
+
+svg path{
+  transition-duration: 0.4s;
+}
+
+button svg:hover path {
+  fill: rgb(108 121 131);
 }
 
 #img-caption {
-  font-size: medium;
+  font-size: large;
+  color: rgb(178 190 205);
   font-weight: 300;
   padding: 20px 5px;
 }
 
 #achievements {
   font-weight: 500;
-  font-size: large;
+  font-size: x-large;
   margin: 30px 0;
-}
-
-
-#tribute-link {
-  margin-top: 30px;
-}
-
-#main {
-  margin: 30px 10px;
-  padding: 30px 0;
-  background-color: #f3f4f6;
-  border-radius: 10px;
-  text-align: center;
-}
-
-#image {
-    display: block;
-    /* object-fit: cover; */
-    /* object-position: 50% 10%; */
-    max-width: 90%;
-    max-height: 60vh;
-    margin: 0 auto;
-  }
-  
-#img-div {
-
-  background-color: white;
-  margin: 0 20px;
-  padding-top: 20px;
-}
-
-#content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-transform: uppercase;
+  color: rgb(178 190 205);
 }
 
 ul {
@@ -73,32 +94,29 @@ ul {
   padding-left: 40px;
   text-align: left;
   font-weight: 300;
-}
-button {
-  height: 10%;
-  /* width: 10%; */
-  border: none;
-  outline: none;
-  background: none;
-  border-radius: 100%;
-  cursor: pointer;
-  padding: 1em;
+  font-size: large;
 }
 
-button .arrow {
-  border: solid black;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  padding: 10px;
-  transition: transform 0.3s ease-out;
-  outline: none;
+li {
+  color: #d1d5db;
+  margin-bottom: 10px;
 }
 
-#right-btn .arrow {
-  transform: rotate(-45deg);
+#tribute-separator {
+  width: 79px;
+  height: 3.25px;
+  background-image: linear-gradient(to right,#454e56, #6c7983);
+  border-radius: 9999px;
+  margin: 30px auto;
 }
 
-#left-btn .arrow {
-  transform: rotate(135deg);
+#hooter {
+  color: rgb(178 190 205);
+  margin-top: 30px;
+  font-size: x-large;
 }
 
+#tribute-link {
+  text-decoration: none;
+  color:  rgb(59 130 246);
+}
